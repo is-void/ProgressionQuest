@@ -1,0 +1,42 @@
+TO: DO
+Make a base class for powerups/pickup items
+sudo code:
+
+GameObject
+Componet Scroll 
+y = -2
+rb = true
+
+
+class Powerup
+{
+var effectPrefab;
+var powerUpInfo;
+
+OnTriggerEnter
+Instantiate(effectPrefab, transform.posistion, effectPrefab.transform.rotation);
+powerUpInfo.doStuff();
+Destroy(gameObject);
+
+}
+
+abstract class PowerUpInfo
+{
+abstract void doStuff();
+}
+
+class Effect()
+{
+public float duration;
+public PowerUpInfo info;
+IENum
+{
+while true
+{
+wait for duration, end the effect, destroy self
+}
+}
+
+-
+-
+-
